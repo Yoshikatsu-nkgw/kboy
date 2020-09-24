@@ -1,10 +1,10 @@
 import 'package:flutter/cupertino.dart';
 
 class MainModel extends ChangeNotifier{
-  String YoshiTx = 'Yoshikatsu!!!!!';
+  String YoshiTx = 'Yoshikatsu';
 
   void changeYoshiTx(){
-    YoshiTx ='YYYYY';
+    YoshiTx ='Y';
     notifyListeners();
   }
 }
