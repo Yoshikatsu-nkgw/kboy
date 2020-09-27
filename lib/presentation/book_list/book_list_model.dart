@@ -1,7 +1,5 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:firebase_core/firebase_core.dart';
-
-import 'book.dart';
+import 'package:kboy_app/domain/book.dart';
 import 'package:flutter/cupertino.dart';
 
 class BookListModel extends ChangeNotifier {

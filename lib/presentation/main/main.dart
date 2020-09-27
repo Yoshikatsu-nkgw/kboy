@@ -1,12 +1,10 @@
-import 'package:kboy_app/book_list_page.dart';
-import 'package:kboy_app/main_model.dart';
 import 'package:flutter/material.dart';
+import 'package:kboy_app/presentation/book_list/book_list_page.dart';
 import 'package:provider/provider.dart';
 import 'package:firebase_core/firebase_core.dart';
+import 'main_model.dart';
 
-void main() {
-  runApp(MyApp());
-}
+void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
   @override
@@ -23,6 +21,7 @@ class MyApp extends StatelessWidget {
           body: Consumer<MainModel>(builder: (context, model, child) {
             return Center(
               child: Column(
+                mainAxisSize: MainAxisSize.min,
                 children: [
                   Text(
                     model.YoshiTx,
@@ -54,4 +53,5 @@ class MyApp extends StatelessWidget {
         ),
       ),
     );
-  }}
+  }
+}
